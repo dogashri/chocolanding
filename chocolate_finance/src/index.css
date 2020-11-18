@@ -1,0 +1,659 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+.ellipse_20{
+  position: absolute;
+left: 30.14%;
+right: 20.34%;
+top: 35.78%;
+bottom: 71.64%;
+}
+.ellipse_21{
+  position: absolute;
+left: 69.14%;
+right: 59.34%;
+top: 38.78%;
+bottom: 72.38%;
+}
+.subtracthead{
+  position: absolute;
+width: 29.49px;
+height: 34.52px;
+/* left: 120px;
+top: 33px; */
+}
+.ellipse_20head{
+  position: absolute;
+width: 11.3px;
+height: 11.3px;
+left: 10.61px;
+top: 11.61px;
+
+}
+.ellipse_21head{
+  position: absolute;
+width: 9.1px;
+height: 9.1px;
+left: 22.9px;
+top: 12.71px;
+}
+.chocolatetext{
+  position: absolute;
+width: 250px;
+height: 23px;
+right: 580px;
+top: 219px;
+
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+font-style: normal;
+font-weight: 500;
+font-size: 15px;
+line-height: 23px;
+color: #9A9EA3;
+}
+
+
+.roadmaphead{
+  position: static;
+width: 111px;
+height: 27px;
+left: 368px;
+top: 0px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+color: #FFFFFF;
+flex: none;
+order: 3;
+align-self: center;
+flex-grow: 0;
+margin-left: 48px;
+}
+.NFTshead{
+  position: static;
+width: 56px;
+height: 27px;
+left: 264px;
+top: 0px;
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+color: #FFFFFF;
+flex: none;
+order: 2;
+align-self: center;
+flex-grow: 0;
+margin-left: 48px;
+}
+.uniswaphead{
+  position: static;
+width: 99px;
+height: 27px;
+left: 117px;
+top: 0px;
+
+/* Desktop / btn-2 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: center;
+flex-grow: 0;
+margin-left: 48px;
+}
+.tokenhead{
+  position: static;
+width: 69px;
+height: 27px;
+left: 0px;
+top: 0px;
+
+/* Desktop / btn-2 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+align-self: center;
+flex-grow: 0;
+margin: 48px 0px;
+}
+
+.mediumhead{
+  position: absolute;
+left: 80%;
+right: -0.01%;
+top: 12.69%;
+bottom: 12.33%;
+}
+.twitterhead{
+  position: absolute;
+left: 40%;
+right: 4.17%;
+top: 11.01%;
+bottom: 10.99%;
+}
+.telegramhead{
+  position: absolute;
+left: 4.17%;
+right: 4.17%;
+top: 8.14%;
+bottom: 8.13%;
+}
+.financehead{
+  position: absolute;
+width: 548px;
+height: 171px;
+left: 446px;
+top: 210px;
+
+/* Desktop / H1 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 140px;
+line-height: 171px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.04em;
+
+/* Grad2 */
+
+background-image: linear-gradient(91.9deg, #5443FB -1.61%, #42CAF3 47.15%, #A4FBCE 99.23%);
+background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+.chocolatehead{
+  position: absolute;
+width: 697px;
+height: 171px;
+left: 372px;
+top: 100px;
+
+/* Desktop / H1 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+font-size: 140px;
+line-height: 171px;
+/* identical to box height */
+
+text-align: center;
+letter-spacing: -0.04em;
+
+/* gradient */
+
+background-image: linear-gradient(90deg, #F75F80 0%, #DD6696 18.28%, #9D78CD 37.69%, #877EDF 63.41%, #6D85F6 91.07%);
+background-clip: text;
+-webkit-text-fill-color: transparent; 
+}
+.chocdischead{
+  position: absolute;
+width: 600px;
+height: 74px;
+left: 420px;
+top: 490px;
+
+/* Desktop / P1 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* or 154% */
+
+text-align: center;
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+
+.fireunit{
+  position: static;
+width: 31px;
+height: 31px;
+left: 232px;
+top: 0px;
+
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+align-self: center;
+flex-grow: 0;
+margin: 20px 0px;
+}
+
+.aboutchoc{
+  position: static;
+  width: 212px;
+  height: 29px;
+  left: 0px;
+  top: 1px;
+  
+  /* Desktop / btn */
+  
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  
+  /* Main / White */
+  
+  color: #FFFFFF;
+  
+  /* Inside Auto Layout */
+  
+  flex: none;
+  order: 0;
+  align-self: center;
+  flex-grow: 0;
+  margin: 20px 0px;
+}
+.ellipseunit{
+  position: absolute;
+width: 39px;
+height: 39px;
+left: 1000px;
+top: 80px;
+}
+.ellipse1{
+  position: absolute;
+width: 39px;
+height: 39px;
+left: 650px;
+top: 90px;
+/* background: #6D85F6;
+opacity: 0.2;
+filter: blur(23px); */
+}
+.ellipse2{
+  position: absolute;
+width: 84px;
+height: 84px;
+left: 220px;
+top: 150px;
+}
+.ellipse3{
+  position: absolute;
+width: 39px;
+height: 39px;
+left: 65px;
+top: 250px;
+}
+.ellipse4{
+  position: absolute;
+width: 66px;
+height: 66px;
+left: 1162px;
+top: 270px;
+}
+.ellipse5{
+  position: absolute;
+width: 66px;
+height: 66px;
+left: 301px;
+top: 400px;
+}
+.ellipse6{
+  position: absolute;
+width: 47px;
+height: 47px;
+left: 1330px;
+top: 404px;
+}
+
+.circles{
+  position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+}
+
+.lilacquant{
+  position: absolute;
+width: 113px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.lilacname{
+  position: absolute;
+width: 39px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.pinkquant{
+  position: absolute;
+width: 132px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+/* Desktop / P1 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.pinkname{
+  position: absolute;
+width: 150px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+/* Desktop / btn-2 */
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.redquant{
+  position: absolute;
+width: 122px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.redname{
+  position: absolute;
+width: 117px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.yellowquant{
+  position: absolute;
+width: 122px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.yellowname{
+  position: absolute;
+width: 62px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.purplequant{
+  position: absolute;
+width: 174px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.purplename{
+  position: absolute;
+width: 100px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.cyanquant{
+  position: absolute;
+width: 141px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.cyanname{
+  position: absolute;
+width: 84px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.bluequant{
+  position: absolute;
+width: 173px;
+height: 37px;
+left: 120px;
+top: 53px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 37px;
+/* identical to box height, or 154% */
+
+
+/* Main / White */
+
+color: #FFFFFF;
+}
+.bluename{
+  position: absolute;
+width: 97px;
+height: 27px;
+left: 120px;
+top: 23px;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: 600;
+font-size: 22px;
+line-height: 27px;
+/* identical to box height */
+
+
+/* Main / Gray */
+
+color: #9A9EA3;
+}
+.vector{
+  position: absolute;
+width: 510px;
+height: 510px;
+left: 0px;
+top: 0px;
+
+}
+
+.ellipseblack{
+  position: absolute;
+width: 390px;
+height: 390px;
+left: 60px;
+top: 60px;
+
+background-color: linear-gradient(43.12deg, #1A1A1A 16.36%, #141416 84.96%);
+}
+.ellipsehollow{
+  position: absolute;
+width: 304px;
+height: 304px;
+left: 103px;
+top: 103px;
+
+/* Main / Dark-gray */
+
+/* border: 2px solid #222222;
+box-sizing: border-box; */
+}
