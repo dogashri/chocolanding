@@ -1,5 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
+import React, { useState } from 'react'
+import styled from 'styled-components';
+import {Link} from 'react-scroll';
 import Subtract from '../Assets/Subtract.png';
 import Ellipse20 from '../Assets/Ellipse 20.png';
 import Ellipse21 from '../Assets/Ellipse 21.png';
@@ -26,10 +27,38 @@ const Unit = () => {
                 <img className="ellipse_21head" src = {Ellipse21} alt = ""/>
                 </Group>
                 <Nav>
-                    <h1 className="roadmaphead">Roadmap</h1>
-                    <h1 className="NFTshead">NFTs</h1>
-                    <h1 className="uniswaphead">Uniswap</h1>
-                    <h1 className="tokenhead">Token</h1>
+                <Link className="tokenlink"
+    activeClass="active"
+    to="token"
+    spy={true}
+    smooth={true}
+    offset={0}
+    duration={500}
+><h1 className="tokenhead">Token</h1></Link>
+<Link
+    activeClass="active"
+    to="uniswap"
+    spy={true}
+    smooth={true}
+    offset={0}
+    duration={500}
+><h1 className="uniswaphead">Uniswap</h1></Link>
+<Link
+    activeClass="active"
+    to="NFTs"
+    spy={true}
+    smooth={true}
+    offset={0}
+    duration={500}
+><h1 className="NFTshead">NFTs</h1></Link>
+                <Link
+    activeClass="active"
+    to="roadmap"
+    spy={true}
+    smooth={true}
+    offset={0}
+    duration={500}
+><h1 className="roadmaphead">Roadmap</h1></Link>        
                 </Nav>
                 <Social>
                     <Medium>

@@ -3,6 +3,10 @@ import styled from 'styled-components';
 import Footer from './Footer'
 import Unit from './Unit';
 import Circle from './Circle';
+import Uniswap from './Uniswap';
+import ChocolateNFTs from './ChocolateNFTs';
+import Roadmap from './Roadmap';
+import BlurDots from './BlurDots'
 
 const App = () => {
     return (
@@ -10,6 +14,10 @@ const App = () => {
             <Wrapper>
                 <Unit/>
                 <Circle/>
+                <Uniswap/>
+                <ChocolateNFTs/>
+                <Roadmap/>
+                <BlurDots/>
             <Footer/>
             </Wrapper>
             

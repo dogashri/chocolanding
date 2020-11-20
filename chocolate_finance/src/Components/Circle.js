@@ -9,11 +9,14 @@ import cyan from '../Assets/cyan.png';
 import blue from '../Assets/blue.png';
 import vector from '../Assets/Vector.png'
 import ellipseblack from '../Assets/Ellipseblack.png';
-import ellipsehollow from '../Assets/Ellipsehollow.png'
+import ellipsehollow from '../Assets/Ellipsehollow.png';
+import no from '../Assets/no.png';
+import etherscan from '../Assets/etherscan.png';
+import mining from '../Assets/mining.png';
 
 const Circle = () => {
     return (
-        <Container>
+        <Container id="token">
             <Lilac><CircleDiv><img className="circles" src={lilac} alt=""/></CircleDiv>
             <h1 className="lilacname">LID</h1>
             <h1 className="lilacquant">115 CHOC</h1>
@@ -48,6 +51,26 @@ const Circle = () => {
                 <img className="ellipseblack" src={ellipseblack} alt=""/>
                 <img className="ellipsehollow" src={ellipsehollow} alt=""/>
                 </Center></Illustration>
+                <Buttons>
+                    <ButtonAudit>
+                        <AuditFrame>
+                            <img className="auditicon" src={no} alt=""/>
+                            <h1 className="audit">Audit</h1>
+                        </AuditFrame>
+                    </ButtonAudit>
+                    <ButtonFarm>
+                        <FarmFrame>
+                            <img className="farmicon" src={mining} alt=""/>
+                            <h1 className="farm">Farm Now</h1>
+                        </FarmFrame>
+                    </ButtonFarm>
+                    <ButtonEtherscan>
+                        <EtherscanFrame>
+                            <img className="ehterscanicon" src={etherscan} alt=""/>
+                            <h1 className="etherscan">Etherscan</h1>
+                        </EtherscanFrame>
+                    </ButtonEtherscan>
+                </Buttons>
         </Container>
     )
 }
@@ -150,4 +173,117 @@ width: 390px;
 height: 390px;
 left: 60px;
 top: 60px;
+`
+const Buttons = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 768px;
+height: 71px;
+left: 336px;
+top: 1006px;
+`
+const ButtonAudit = styled.div`
+position: static;
+width: 224px;
+height: 71px;
+left: calc(50% - 224px/2 + 272px);
+top: calc(50% - 71px/2);
+
+/* Main / BG */
+
+background: #1A1A1A;
+/* Bright / Lilac */
+
+border: 2px solid #A965EC;
+border-radius: 50px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 2;
+flex-grow: 0;
+margin-left: 48px;
+`
+const ButtonFarm = styled.div`
+position: static;
+width: 224px;
+height: 71px;
+left: calc(50% - 224px/2);
+top: calc(50% - 71px/2);
+
+/* Main / BG */
+
+background: #1A1A1A;
+/* Bright / Purple */
+
+border: 2px solid #6D85F6;
+border-radius: 50px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 1;
+flex-grow: 0;
+margin-left: 48px;
+`
+const ButtonEtherscan = styled.div`
+position: static;
+width: 224px;
+height: 71px;
+left: calc(50% - 224px/2 - 272px);
+top: calc(50% - 71px/2);
+
+/* Main / BG */
+
+background: #1A1A1A;
+/* Bright / Pink */
+
+border: 2px solid #EF6287;
+border-radius: 50px;
+
+/* Inside Auto Layout */
+
+flex: none;
+order: 0;
+flex-grow: 0;
+margin: 48px 0px;
+`
+const AuditFrame = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 107px;
+height: 27px;
+left: calc(50% - 224px/2 + 340px);
+top: calc(50% - 27px/2 + 0.5px);
+`
+const FarmFrame = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 159px;
+height: 27px;
+left: calc(50% - 224px/2 + 40px);
+top: calc(50% - 27px/2 + 0.5px);
+`
+const EtherscanFrame = styled.div`
+display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+
+position: absolute;
+width: 159px;
+height: 27px;
+left: calc(50% - 159px/2 - 270px);
+top: calc(50% - 27px/2 + 0.5px);
 `
