@@ -157,7 +157,7 @@ flex: none;
 order: 0;
 align-self: center;
 flex-grow: 0;
-margin-left: 48px;
+margin-left: 0px;
 }
 
 .mediumhead{
@@ -357,6 +357,9 @@ left: 0%;
 right: 0%;
 top: 0%;
 bottom: 0%;
+}
+.circles:hover{
+  transform: scale(1.5);
 }
 /* img:hover{
   background-color: #6D85F6;
