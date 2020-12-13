@@ -1,6 +1,4 @@
-import React, { useState } from 'react';
-import { Menu, Dropdown } from 'antd';
-import {useHistory} from 'react-router-dom';
+import React from 'react';
 import styled from 'styled-components';
 import {Link} from 'react-scroll';
 import Subtract from '../Assets/Subtract.png';
@@ -22,9 +20,8 @@ import {device} from './Device';
 
 
 const Unit = ({setHam}) => {
-    const history = useHistory()
-    const[hamMenu,setHamMenu] = useState(false)
-    const showMenu = ()=>setHamMenu(!hamMenu)
+    // const[hamMenu,setHamMenu] = useState(false)
+    // const showMenu = ()=>setHamMenu(!hamMenu)
   
     return (<>
         <Container>
@@ -80,8 +77,7 @@ const Unit = ({setHam}) => {
                         <img className="telegramhead" src={telegram} alt=""/>
                     </Telegram>
                 </Social>
-                <Menuicon>
-                    <a onClick={()=>setHam(false)}> <img  className="menuicon" src={hamicon} alt=""/></a>
+                <Menuicon onClick={()=>setHam(false)} href="#"> <img  className="menuicon" src={hamicon} alt=""/>
                 </Menuicon>
             </Header>
             {/* {hamMenu?<HamburgerMenu/>:null} */}

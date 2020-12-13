@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import {Link} from 'react-scroll';
 import close_big from '../Assets/close_big.png'
@@ -9,17 +9,13 @@ import medium from '../Assets/medium.png';
 import twitter from '../Assets/twitter.png';
 import telegram from '../Assets/telegram.png';
 import ellipsefine from '../Assets/Ellipse.png';
-import ellipse1 from '../Assets/Ellipse (1).png';
 import ellipse2 from '../Assets/Ellipse2.png';
-import ellipse3 from '../Assets/Ellipse3.png';
 import ellipse4 from '../Assets/Ellipse4.png';
 import ellipse5 from '../Assets/Ellipse5.png';
 import ellipse6 from '../Assets/Ellipse6.png';
-import {device} from './Device';
 
 const HamburgerMenu = ({setHam}) => {
-    const [showMenu,setShowMenu] = useState(false);
-    const handleMenu =()=> setShowMenu(!showMenu)
+    // const [showMenu,setShowMenu] = useState(false);
     return (
         <>
         <Container>
@@ -76,8 +72,7 @@ const HamburgerMenu = ({setHam}) => {
                         <img className="telegramhead" src={telegram} alt=""/>
                     </Telegram>
                 </Social>
-                <Menuicon>
-                    <a onClick={()=>setHam(true)}> <img  className="menucloseham" src={close_big} alt=""/></a>
+                <Menuicon onClick={()=>setHam(true)} href="#"> <img  className="menucloseham" src={close_big} alt=""/>
                 </Menuicon>
             </Header>
             {/* <BlurDots> */}

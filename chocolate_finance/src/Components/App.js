@@ -1,6 +1,6 @@
 import React,{Fragment, useState} from 'react';
 import 'antd/dist/antd.css';
-import {BrowserRouter as Router,Route,Switch} from 'react-router-dom';
+import {BrowserRouter as Router} from 'react-router-dom';
 import styled from 'styled-components';
 import Footer from './Footer'
 import Unit from './Unit';

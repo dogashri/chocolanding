@@ -7,9 +7,6 @@ import yellow from '../Assets/yellow.png';
 import purple from '../Assets/purple.png';
 import cyan from '../Assets/cyan.png';
 import blue from '../Assets/blue.png';
-import vector from '../Assets/Vector.png'
-import ellipseblack from '../Assets/Ellipseblack.png';
-import ellipsehollow from '../Assets/Ellipsehollow.png';
 import no from '../Assets/no.png';
 import etherscan from '../Assets/etherscan.png';
 import mining from '../Assets/mining.png';
@@ -49,7 +46,7 @@ const Circle = () => {
             <Illustration><Center>
                 {/* <img className="vector" src={vector} alt=""/> */}
                 <MaskGroup>
-                    <MaskGroup_1></MaskGroup_1>
+                    <MaskGroup1/>
                 </MaskGroup>
                 {/* <img className="ellipseblack" src={ellipseblack} alt=""/>
                 <img className="ellipsehollow" src={ellipsehollow} alt=""/> */}
@@ -276,7 +273,7 @@ top: 60px;
 background: #29292c;
     border-radius: 50%;
 `
-const MaskGroup_1 = styled.div`
+const MaskGroup1 = styled.div`
 position: absolute;
 width: 302px;
 height: 302px;
