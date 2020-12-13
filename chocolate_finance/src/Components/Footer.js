@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Subtract from '../Assets/Subtract.png';
 import Ellipse20 from '../Assets/Ellipse 20.png';
 import Ellipse21 from '../Assets/Ellipse 21.png';
+import {device} from './Device'
 
 const Footer = () => {
     return (
@@ -16,15 +17,13 @@ const Footer = () => {
             </Menu>
             <h1 className="chocolatetext">2020 Chocolate. All rights reserved</h1>
             <Group>
-                {/* <Subs> */}
+                
                     <img className="subtract" src={Subtract} alt =""/>
-                    {/* </Subs> */}
-                {/* <Ellips20> */}
+                    
                     <img className="ellipse_20" src={Ellipse20} alt = ""/>
-                    {/* </Ellips20> */}
-                {/* <Ellips21> */}
+                    
                     <img className="ellipse_21" src = {Ellipse21} alt = ""/>
-                    {/* </Ellips21> */}
+                    
             </Group>
         </Container>
     )
@@ -39,18 +38,52 @@ left: 0px;
 right: 0px;
 top: 4053px;
 backdrop-filter: blur(28px);
+@media ${device.i_pad}{
+    height:204px;
+    top:4196px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+height: 272px;
+left: 0px;
+right: 1px;
+top: 3996px;
+}
 `
 const Menu = styled.div`
 display: flex;
 flex-direction: row;
 align-items: flex-start;
 padding: 0px;
-
 position: absolute;
 width: 479px;
 height: 27px;
 left: 481px;
 top: 166px;
+@media ${device.i_pad}{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 434px;
+height: 23px;
+left:167px;
+right: 167px;
+top: 110px;
+}
+@media ${device.i_phone}{
+    display: flex;
+flex-direction: row;
+align-items: flex-start;
+padding: 0px;
+
+position: absolute;
+width: 217.25px;
+height: 56px;
+left: 36px;
+top: 104px;
+}
 `
 const Roadmap = styled.div`
 position: static;
@@ -69,6 +102,21 @@ order: 3;
 align-self: center;
 flex-grow: 0;
 margin-left: 48px;
+@media ${device.i_pad}{
+    width: 96px;
+height: 23px;
+left: 338px;
+top: 0px;
+font-size: 19px;
+line-height: 23px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 81px;
+height: 20px;
+left: 136.25px;
+top: 72px;
+}
 `
 
 const NFTs = styled.div`
@@ -88,6 +136,21 @@ order: 2;
 align-self: center;
 flex-grow: 0;
 margin-left: 48px;
+@media ${device.i_pad}{
+    width: 49px;
+height: 23px;
+left: 241px;
+top: 0px;
+font-size: 19px;
+line-height: 23px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 41px;
+height: 20px;
+left: 136px;
+top: 36px;
+}
 `
 
 const Uniswap = styled.div`
@@ -107,6 +170,21 @@ order: 1;
 align-self: center;
 flex-grow: 0;
 margin-left: 48px;
+@media ${device.i_pad}{
+    width: 85px;
+height: 23px;
+left: 108px;
+top: 0px;
+font-size: 19px;
+line-height: 23px;
+}
+@media ${device.i_phone}{
+    position:absolute;
+width: 72px;
+height: 20px;
+left: -45px;
+top: 72px;
+}
 `
 
 const Token = styled.div`
@@ -125,6 +203,21 @@ flex: none;
 order: 0;
 align-self: center;
 flex-grow: 0;
+@media ${device.i_pad}{
+    width: 60px;
+height: 23px;
+left: 0px;
+top: 0px;
+font-size: 19px;
+line-height: 23px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 50px;
+height: 20px;
+left: 0px;
+top: 36px;
+}
 `
 // const ChocolateText = styled.div`
 // position: absolute;
@@ -149,6 +242,19 @@ top: 13%;
 bottom: 63.86%;
 width:70px;
 height:67.12px;
+@media ${device.i_pad}{
+    left: 356px;
+right: 46.35%;
+top: 11.76%;
+bottom: 61.91%; 
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 36px;
+height: 34.52px;
+left: 36px;
+top: 28px;
+}
 `
 
 // const Subs = styled.div`

@@ -1,4 +1,6 @@
-import React from 'react'
+import React, { useState } from 'react';
+import { Menu, Dropdown } from 'antd';
+import {useHistory} from 'react-router-dom';
 import styled from 'styled-components';
 import {Link} from 'react-scroll';
 import Subtract from '../Assets/Subtract.png';
@@ -15,10 +17,16 @@ import ellipse3 from '../Assets/Ellipse3.png';
 import ellipse4 from '../Assets/Ellipse4.png';
 import ellipse5 from '../Assets/Ellipse5.png';
 import ellipse6 from '../Assets/Ellipse6.png';
+import hamicon from '../Assets/menu.svg'
+import {device} from './Device';
 
 
-const Unit = () => {
-    return (
+const Unit = ({setHam}) => {
+    const history = useHistory()
+    const[hamMenu,setHamMenu] = useState(false)
+    const showMenu = ()=>setHamMenu(!hamMenu)
+  
+    return (<>
         <Container>
             <Header>
                 <Group>
@@ -27,8 +35,9 @@ const Unit = () => {
                 <img className="ellipse_21head" src = {Ellipse21} alt = ""/>
                 </Group>
                 <Nav>
-                <Link className="tokenlink"
+                <Link
     activeClass="active"
+    key="0"
     to="token"
     spy={true}
     smooth={true}
@@ -71,7 +80,11 @@ const Unit = () => {
                         <img className="telegramhead" src={telegram} alt=""/>
                     </Telegram>
                 </Social>
+                <Menuicon>
+                    <a onClick={()=>setHam(false)}> <img  className="menuicon" src={hamicon} alt=""/></a>
+                </Menuicon>
             </Header>
+            {/* {hamMenu?<HamburgerMenu/>:null} */}
             <h1 className="financehead">Finance</h1>
             <h1 className="chocolatehead">Chocolate</h1>
             <h1 className="chocdischead">Chocolate is an experimental project combining the features of Defi and NFT farming</h1>
@@ -91,7 +104,8 @@ const Unit = () => {
                 <img className="ellipse6" src={ellipse6} alt=""/>
             </BlurDots>
         </Container>
-    )
+        {/* {(!hamMenu)?null:<HamburgerMenu/>} */}
+    </>)
 }
 
 export default Unit
@@ -102,6 +116,12 @@ width: 1440px;
 height: 800px;
 left: 0px;
 top: 0px;
+@media ${device.i_pad}{
+    width:768px
+}
+@media ${device.i_phone}{
+    width:375px;
+}
 `
 const Header = styled.div`
 position: absolute;
@@ -109,13 +129,34 @@ width: 1440px;
 height: 100px;
 left: 0px;
 top: 0px;
+@media ${device.i_pad}{
+    position: absolute;
+width: 640px;
+height: 34.52px;
+left: 64px;
+top: 32px;
+}
+@media ${device.i_phone}{
+    width: 303.5px;
+height: 34.52px;
+left: 35px;
+top: 32px;
+}
 `
 const Group = styled.div`
 position: absolute;
 width: 36px;
 height: 34.52px;
 left: 120px;
-top: 33px;
+top: 32px;
+@media ${device.i_pad}{
+    position: absolute;
+width: 36px;
+height: 34.52px;
+left: 0px;
+top: 0px;
+
+}
 `
 const Nav = styled.div`
 display: flex;
@@ -127,6 +168,20 @@ width: 479px;
 height: 27px;
 left: 481px;
 top: 37px;
+@media ${device.i_pad}{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 292px;
+height: 20px;
+left: 144.51px;
+top: 0px;
+}
+@media ${device.i_phone}{
+    display:none
+}
 `
 const Social = styled.div`
 display: flex;
@@ -138,7 +193,39 @@ width: 144px;
 height: 24px;
 left: 1176px;
 top: 38px;
+@media ${device.i_pad}{
+    display: flex;
+flex-direction: row;
+align-items: center;
+padding: 0px;
+position: absolute;
+width: 120px;
+height: 24px;
+left: 484px;
+top: 0px;
+right:64px;
+}
+@media ${device.i_phone}{
+    display:none;
+}
 `
+const Menuicon = styled.div`
+position: absolute;
+width: 32px;
+height: 32px;
+left: 275.5px;
+top: 0px;
+@media (min-width:768px){
+    display:none
+}
+/* @media ${device.laptopL}{
+    display:none;
+}
+@media ${device.desktop}{
+    display:none;
+} */
+`
+
 const Medium = styled.div`
 position: static;
 width: 24px;
@@ -186,6 +273,20 @@ top: 628px;
 
 background: linear-gradient(73.97deg, #F75F80 5.58%, #DD6696 20.95%, #9D78CD 37.28%, #877EDF 58.91%, #6D85F6 82.17%);
 border-radius: 50px;
+@media ${device.i_pad}{
+    position: absolute;
+width: 296px;
+height: 75px;
+left: 236px;
+top: 695px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 259px;
+height: 65px;
+left: 58px;
+top: 615px;
+}
 `
 const Frame = styled.div`
 display: flex;
@@ -205,4 +306,16 @@ width: 1312px;
 height: 426px;
 left: 65px;
 top: 144px;
+@media ${device.i_pad}{
+    width:612px;
+    height:694px;
+    left:87px
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 298px;
+height: 627px;
+left: 35px;
+top: 112px;
+}
 `

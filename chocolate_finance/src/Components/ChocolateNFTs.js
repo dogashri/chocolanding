@@ -4,6 +4,7 @@ import ellipsenft from '../Assets/Ellipsenft.png';
 import ellipsenftblack from '../Assets/Ellipsenftblack.png';
 import ellipsenftpink from '../Assets/Ellipsenftpink.png';
 import Btnsec from '../Assets/Btnsec.png';
+import { device } from './Device';
 
 const ChocolateNFTs = () => {
     return (
@@ -31,6 +32,20 @@ width: 1440px;
 height: 606px;
 left: 0px;
 top: 2544px;
+@media ${device.i_pad}{
+    position: absolute;
+width: 691px;
+height: 777px;
+left: 56px;
+top: 2612px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 351px;
+height: 662px;
+left: 12px;
+top: 2820px;
+}
 `
 const NFTbg = styled.div`
 position: absolute;
@@ -38,11 +53,22 @@ width: 1240px;
 height: 403px;
 left: 100px;
 top: 138px;
-
-/* Main / Dark-gray */
-
 background: #222222;
 border-radius: 64px;
+@media ${device.i_pad}{
+    position: absolute;
+width: 656px;
+height: 493px;
+left: 0px;
+top: 0px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 351px;
+height: 528px;
+left: 0px;
+top: 0px;
+}
 `
 const NFTillus = styled.div`
 position: absolute;
@@ -50,6 +76,19 @@ width: 439px;
 height: 413px;
 left: 877px;
 top: 72px;
+@media ${device.i_pad}{
+    width: 439px;
+height: 413px;
+left: 252px;
+top: 329px;
+}
+@media ${device.i_phone}{
+    position: absolute;
+width: 304px;
+height: 286px;
+left: 36px;
+top: 376px;
+}
 `
 const ShadowEllipse  = styled.div`
 position: absolute;
@@ -64,4 +103,11 @@ backdrop-filter: blur(11.17px);
 /* Note: backdrop-filter has minimal browser support */
 
 border-radius: 200px;
+@media ${device.i_phone}{
+    position: absolute;
+width: 175.2px;
+height: 175.2px;
+left: 90px;
+top: 150px;
+}
 `

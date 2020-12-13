@@ -7,6 +7,7 @@ import blurdot4 from '../Assets/blurdot4.png';
 import blurdot5 from '../Assets/blurdot5.png';
 import blurdot6 from '../Assets/blurdot6.png';
 import blurdot7 from '../Assets/blurdot7.png';
+import {device} from './Device';
 
 const BlurDots = () => {
     return (
@@ -29,5 +30,11 @@ width: 1439px;
 height: 1978px;
 left: -19px;
 top: 1738px;
-
+@media ${device.i_pad}{
+    width:768px
+}
+@media ${device.i_phone}{
+    width:375px;
+    display:none
+}
 `
