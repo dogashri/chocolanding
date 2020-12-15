@@ -211,7 +211,7 @@ width: 32px;
 height: 32px;
 left: 275.5px;
 top: 0px;
-@media (min-width:768px){
+@media (min-width:375px){
     display:none
 }
 /* @media ${device.laptopL}{
@@ -269,6 +269,7 @@ top: 628px;
 
 background: linear-gradient(73.97deg, #F75F80 5.58%, #DD6696 20.95%, #9D78CD 37.28%, #877EDF 58.91%, #6D85F6 82.17%);
 border-radius: 50px;
+border:0px;
 @media ${device.i_pad}{
     position: absolute;
 width: 296px;

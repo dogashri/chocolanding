@@ -132,7 +132,7 @@ width: 32px;
 height: 32px;
 left: 315px;
 top: 32px;
-@media (min-width:768px){
+@media (min-width:375px){
     display:none
 }`
 

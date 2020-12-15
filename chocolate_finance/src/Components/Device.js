@@ -1,11 +1,16 @@
 const size = {
     mobileS: '320px',
-    i_phone: '375px',
-    mobileL: '425px',
-    i_pad: '768px',
-    laptop: '1024px',
-    laptopL: '1440px',
-    desktop: '2560px'
+    // i_phone: '375px',
+    // mobileL: '425px',
+    // i_pad: '768px',
+    // laptop: '1024px',
+    // laptopL: '1440px',
+    desktop: '2560px',
+    // new
+    i_phone:'425px',
+    i_pad:'768px',
+    laptop:'1024px',
+    laptopL:'2526px'
   }
   export const device = {
     mobileS: `(min-width: ${size.mobileS})`,
