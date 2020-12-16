@@ -643,20 +643,115 @@ top: 700px;
   }
 }
 
-.circles{
+#circles{
   position: absolute;
 left: 0%;
 right: 0%;
 top: 0%;
 bottom: 0%;
 }
+.circle7{
+  width: 140px;
+  height: 140px;
+}
 .circles:hover{
   transform: scale(1.5);
+  transform: color(#B68DE8);
+}
+#circle{
+  position: absolute;
+left: 0%;
+right: 0%;
+top: 0%;
+bottom: 0%;
+}
+#circle:hover  #arc_7{
+  display: block;
 }
 /* img:hover{
   background-color: #6D85F6;
 } */
 
+#arc_7{
+  position: absolute;
+  width: 120px;
+  height: 55px;
+  left: 90px;
+  top: -49px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc7.png);
+  transform: rotate(5deg);
+}
+.shadow7{
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  left: 50px;
+  top: -49px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/7shadow.png);
+  transform: rotate(5deg);
+}
+.arc6{
+  position: absolute;
+  width: 120px;
+  height: 102px;
+  left: 177px;
+  top: -10px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc6.png);
+  transform: rotate(-6deg);
+}
+.arc5{
+  position: absolute;
+  width: 150px;
+  height: 135px;
+  left: 195px;
+  top: 110px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc5.png);
+  transform: rotate(-2.5deg);
+}
+.arc4{
+  position: absolute;
+  width: 120px;
+  height: 130px;
+  left: 100px;
+  top: 195px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc4.png);
+  transform: rotate(7deg);
+}
+.arc3{
+  position: absolute;
+  width: 120px;
+  height: 115px;
+  left: -23px;
+  top: 180px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc3.png);
+  transform: rotate(-13deg);
+}
+.arc2{
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: -80px;
+  top: 49px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc2.png);
+  transform: rotate(2deg);
+}
+.arc1{
+  position: absolute;
+  width: 120px;
+  height: 102px;
+  left: -20px;
+  top: -35px;
+  /* display: none; */
+  background: url(../../chocolate_finance/src/Assets/arc1.png);
+  transform: rotate(12deg);
+}
 .lilacquant{
   position: absolute;
 width: 113px;

@@ -7,7 +7,7 @@ const size = {
     // laptopL: '1440px',
     desktop: '2560px',
     // new
-    i_phone:'425px',
+    i_phone:'375px',
     i_pad:'768px',
     laptop:'1024px',
     laptopL:'2526px'

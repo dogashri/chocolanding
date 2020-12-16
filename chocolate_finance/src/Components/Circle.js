@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState} from 'react'
 import styled from 'styled-components';
 import lilac from '../Assets/lilac.png';
 import pink from '../Assets/pink.png';
@@ -13,40 +13,77 @@ import mining from '../Assets/mining.png';
 import {device} from './Device'
 
 const Circle = () => {
+    const [isShown7, setIsShown7] = useState(false);
+    const [isShown6, setIsShown6] = useState(false);
+    const [isShown5, setIsShown5] = useState(false);
+    const [isShown4, setIsShown4] = useState(false);
+    const [isShown3, setIsShown3] = useState(false);
+    const [isShown2, setIsShown2] = useState(false);
+    const [isShown1, setIsShown1] = useState(false);
     return (
         <Container id="token" key="0">
-            <Lilac><CircleDiv><img className="circles" src={lilac} alt=""/></CircleDiv>
+            <Lilac><CircleDiv><img
+            onMouseEnter={() => setIsShown1(true)}
+            onMouseLeave={() => setIsShown1(false)}
+             className="circles" src={lilac} alt=""/></CircleDiv>
             <h1 className="lilacname">LID</h1>
             <h1 className="lilacquant">115 CHOC</h1>
             </Lilac>
-            <Pink><CircleDiv><img className="circles" src={pink} alt=""/></CircleDiv>
+            <Pink><CircleDiv><img
+            onMouseEnter={() => setIsShown2(true)}
+            onMouseLeave={() => setIsShown2(false)}
+             className="circles" src={pink} alt=""/></CircleDiv>
             <h1 className="pinkname">NFT Rewards</h1>
             <h1 className="pinkquant">1256 CHOC</h1>
             </Pink>
-            <Red><CircleDiv><img className="circles" src={red} alt=""/></CircleDiv>
+            <Red><CircleDiv><img
+            onMouseEnter={() => setIsShown3(true)}
+            onMouseLeave={() => setIsShown3(false)}
+             className="circles" src={red} alt=""/></CircleDiv>
             <h1 className="redname">Marketing</h1>
             <h1 className="redquant">575 CHOC</h1>
             </Red>
-            <Yellow><CircleDiv><img className="circles" src={yellow} alt=""/></CircleDiv>
+            <Yellow><CircleDiv><img
+            onMouseEnter={() => setIsShown4(true)}
+            onMouseLeave={() => setIsShown4(false)}
+             className="circles" src={yellow} alt=""/></CircleDiv>
             <h1 className="yellowname">Team</h1>
             <h1 className="yellowquant">575 CHOC</h1>
             </Yellow>
-            <Purple><CircleDiv><img className="circles" src={purple} alt=""/></CircleDiv>
+            <Purple><CircleDiv><img
+            onMouseEnter={() => setIsShown5(true)}
+            onMouseLeave={() => setIsShown5(false)}
+             className="circles" src={purple} alt=""/></CircleDiv>
             <h1 className="purplename">Liquidity</h1>
             <h1 className="purplequant">2489.75</h1>
             </Purple>
-            <Cyan><CircleDiv><img className="circles" src={cyan} alt=""/></CircleDiv>
+            <Cyan><CircleDiv><img
+            onMouseEnter={() => setIsShown6(true)}
+            onMouseLeave={() => setIsShown6(false)}
+             className="circles" src={cyan} alt=""/></CircleDiv>
             <h1 className="cyanname">Presale</h1>
             <h1 className="cyanquant">3450 CHOC</h1>
             </Cyan>
-            <Blue><CircleDiv><img className="circles" src={blue} alt=""/></CircleDiv>
+            <Blue><CircleDiv id="circles"><img 
+            onMouseEnter={() => setIsShown7(true)}
+            onMouseLeave={() => setIsShown7(false)}
+             className="circles" id="circles" src={blue} alt=""/></CircleDiv>
             <h1 className="bluename">farming</h1>
             <h1 className="bluequant">3030.25 CHOC</h1>
+            {isShown7 &&(<div className="shadow7"></div>)}
             </Blue>
             <Illustration><Center>
                 {/* <img className="vector" src={vector} alt=""/> */}
                 <MaskGroup>
-                    <MaskGroup1/>
+                    <MaskGroup1>
+                        {isShown1 &&(<div className="arc1"></div>)}
+                        {isShown2 &&(<div className="arc2"></div>)}
+                        {isShown3 &&(<div className="arc3"></div>)}
+                        {isShown4 &&(<div className="arc4"></div>)}
+                        {isShown5 &&(<div className="arc5"></div>)}
+                        {isShown6 &&(<div className="arc6"></div>)}
+                        {isShown7 && (<div className="arc7" id="arc_7"></div>)}
+                    </MaskGroup1>
                 </MaskGroup>
                 {/* <img className="ellipseblack" src={ellipseblack} alt=""/>
                 <img className="ellipsehollow" src={ellipsehollow} alt=""/> */}
@@ -126,6 +163,7 @@ width: 140px;
 height: 140px;
 left: 0px;
 top: 0px;
+background-color:transparent
 `
 const Pink = styled.div`
 position: absolute;

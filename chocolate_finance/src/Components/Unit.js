@@ -211,15 +211,21 @@ width: 32px;
 height: 32px;
 left: 275.5px;
 top: 0px;
-@media (min-width:375px){
+/* @media ${device.i_phone}{
+    display:inline;
+} */
+@media (min-width:475px){
     display:none
 }
-/* @media ${device.laptopL}{
+@media (min-width:411px){
+    display:none
+}
+ /* @media ${device.laptopL}{
     display:none;
 }
 @media ${device.desktop}{
     display:none;
-} */
+}  */
 `
 
 const Medium = styled.div`
