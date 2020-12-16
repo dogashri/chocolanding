@@ -85,10 +85,19 @@ const Unit = ({setHam}) => {
             <h1 className="chocolatehead">Chocolate</h1>
             <h1 className="chocdischead">Chocolate is an experimental project combining the features of Defi and NFT farming</h1>
             <Button>
-                <Frame>
+            <Link
+    activeClass="active"
+    key="0"
+    to="token"
+    spy={true}
+    smooth={true}
+    offset={0}
+    duration={500}
+><Frame>
                     <img className="fireunit" src={fire} alt=""/>
                     <h1 className="aboutchoc">About Chocolate</h1>
-                </Frame>
+                </Frame></Link>
+                
             </Button>
             <BlurDots>
                 <img className="ellipseunit" src={ellipsefine} alt=""/>
